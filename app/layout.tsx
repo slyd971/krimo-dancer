@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Archivo, Newsreader } from "next/font/google";
+import { contact } from "@/data/site-content";
 import "./globals.css";
 
 const anton = Anton({
@@ -76,7 +77,7 @@ export default function RootLayout({
         addressLocality: "Paris",
         addressCountry: "FR"
       },
-      email: "ladanseourien.asso@gmail.com",
+      email: contact.email,
       telephone: "+33758420476",
       sameAs: [
         "https://www.instagram.com/krimo_3006",

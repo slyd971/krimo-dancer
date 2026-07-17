@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MagneticLink } from "@/components/ui/MagneticLink";
 import { RevealText } from "@/components/ui/RevealText";
-import { ldor } from "@/data/site-content";
+import { LINKS, ldor } from "@/data/site-content";
 
 export function LaDanseOuRien() {
   return (
@@ -48,13 +48,13 @@ export function LaDanseOuRien() {
         ))}
       </div>
       <div className="ldor__actions">
-        <MagneticLink href="https://www.instagram.com/ladanseourien" variant="sage" external>
+        <MagneticLink href={LINKS.maraude} variant="sage" external>
           Participer à une maraude
         </MagneticLink>
-        <MagneticLink href="https://www.instagram.com/ladanseourien" variant="dark" external>
+        <MagneticLink href={LINKS.adhesion} variant="dark" external>
           Adhérer à l’association
         </MagneticLink>
-        <MagneticLink href="https://www.instagram.com/ladanseourien" variant="dark" external>
+        <MagneticLink href={LINKS.don} variant="dark" external>
           Faire un don
         </MagneticLink>
       </div>

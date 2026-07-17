@@ -7,6 +7,7 @@ export type GalleryItem = {
 };
 
 export const contact = {
+  // TODO: remplacer par l'email de booking dédié quand disponible — actuellement l'email associatif.
   email: "ladanseourien.asso@gmail.com",
   phone: "+33 7 58 42 04 76",
   phoneHref: "tel:+33758420476",
@@ -17,6 +18,15 @@ export const contact = {
     { label: "Instagram La Danse ou Rien", href: "https://www.instagram.com/ladanseourien" },
     { label: "TikTok @krimo_3006", href: "https://www.tiktok.com/@krimo_3006" }
   ]
+};
+
+// Liens externes à finaliser côté association. Un seul endroit à modifier
+// quand les pages HelloAsso existeront.
+export const LINKS = {
+  don: "[URL_HELLOASSO_DON]",
+  adhesion: "[URL_HELLOASSO_ADHESION]",
+  // temporaire : pas de page dédiée aujourd'hui, cf. audit
+  maraude: "https://www.instagram.com/ladanseourien"
 };
 
 export const navItems = [
