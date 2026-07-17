@@ -89,14 +89,6 @@ export const ldor = {
 };
 
 export const experience = {
-  places: [
-    "Concorde Atlantique — Paris",
-    "La Bellevilloise — Paris",
-    "River’s King — Paris",
-    "Punk Paradise — Paris",
-    "La Felicità — Paris",
-    "Le Point Éphémère — Paris"
-  ],
   roles: [
     "Danseur freestyle indépendant",
     "Membre et fondateur du collectif La Tempête",
@@ -154,22 +146,13 @@ export const gallery: GalleryItem[] = [
 export const collaborationTargets = [
   "Organisateurs d’événements",
   "Clubs et festivals",
-  "Marques",
-  "Agences",
-  "Médias",
-  "Institutions culturelles",
-  "Associations",
-  "Collectivités",
-  "Lieux sociaux et culturels"
+  "Marques et agences",
+  "Institutions culturelles et collectivités"
 ];
 
 export const collaborationOffers = [
   "Performance solo",
   "Show collectif",
-  "Animation de soirée",
   "Accompagnement d’un DJ set",
-  "Workshop",
-  "Intervention pédagogique",
-  "Projet culturel ou solidaire",
-  "Collaboration de marque"
+  "Workshop et intervention pédagogique"
 ];

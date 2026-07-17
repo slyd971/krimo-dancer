@@ -1,5 +1,11 @@
 import { RevealText } from "@/components/ui/RevealText";
+import { references } from "@/data/references";
 import { experience } from "@/data/site-content";
+
+function formatReference({ lieu, evenement, annee }: (typeof references)[number]) {
+  if (!evenement) return lieu;
+  return annee ? `${lieu} — ${evenement} (${annee})` : `${lieu} — ${evenement}`;
+}
 
 export function Experience() {
   return (
@@ -12,8 +18,8 @@ export function Experience() {
         <div>
           <p>Références</p>
           <ul>
-            {experience.places.map((place) => (
-              <li key={place}>{place}</li>
+            {references.map((reference) => (
+              <li key={reference.lieu}>{formatReference(reference)}</li>
             ))}
           </ul>
         </div>
