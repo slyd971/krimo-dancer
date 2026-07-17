@@ -10,7 +10,7 @@ export const contact = {
   email: "ladanseourien.asso@gmail.com",
   phone: "+33 7 58 42 04 76",
   phoneHref: "tel:+33758420476",
-  address: "185 rue du Chevaleret, 75013 Paris",
+  address: "Paris, France",
   socials: [
     { label: "Instagram KRIMO", href: "https://www.instagram.com/krimo_3006" },
     { label: "Instagram La Tempête", href: "https://www.instagram.com/latempete_4" },

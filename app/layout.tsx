@@ -73,8 +73,6 @@ export default function RootLayout({
       jobTitle: "Danseur freestyle, performer et créateur de lien social",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "185 rue du Chevaleret",
-        postalCode: "75013",
         addressLocality: "Paris",
         addressCountry: "FR"
       },
