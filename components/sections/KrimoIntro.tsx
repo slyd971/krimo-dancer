@@ -20,7 +20,7 @@ export function KrimoIntro() {
       <RevealText className="krimo-intro__copy">
         <SectionTitle
           eyebrow="02 / KRIMO"
-          title="KRIMO, le mouvement comme point de rencontre."
+          title="KRIMO, la danse comme point de rencontre."
           intro="Basé à Paris, KRIMO est danseur freestyle, performer et ambianceur. Sa danse traverse les cultures et les styles pour créer une connexion directe avec le public."
         />
         <p>
