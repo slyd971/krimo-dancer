@@ -49,9 +49,6 @@ export function HeroVideo() {
           </MagneticLink>
         </div>
       </div>
-      <a className="scroll-indicator" href="#manifesto" aria-label="Descendre">
-        <span />
-      </a>
     </section>
   );
 }

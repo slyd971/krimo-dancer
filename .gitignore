@@ -33,3 +33,7 @@ public/videos/*.mov
 /La Danse ou Rien/
 /La Tempête/
 /bio-karim/
+.vercel
+
+# local Claude Code project settings
+/.claude/
