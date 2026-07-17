@@ -32,7 +32,7 @@ export function KrimoIntro() {
         </p>
       </RevealText>
       <div className="style-marquee" aria-label={krimoStyles.join(", ")}>
-        <div>
+        <div aria-hidden="true">
           {[...krimoStyles, ...krimoStyles].map((style, index) => (
             <span key={`${style}-${index}`}>{style}</span>
           ))}
