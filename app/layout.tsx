@@ -23,7 +23,7 @@ const newsreader = Newsreader({
   display: "swap"
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://krimo.press";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://krimo-dancer.presskit.fr";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
