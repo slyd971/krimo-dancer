@@ -9,8 +9,7 @@ export type GalleryItem = {
 export const contact = {
   // TODO: remplacer par l'email de booking dédié quand disponible — actuellement l'email associatif.
   email: "ladanseourien.asso@gmail.com",
-  phone: "+33 7 58 42 04 76",
-  phoneHref: "tel:+33758420476",
+  whatsappHref: "https://wa.me/33758420476",
   address: "Paris, France",
   socials: [
     { label: "Instagram KRIMO", href: "https://www.instagram.com/krimo_3006" },

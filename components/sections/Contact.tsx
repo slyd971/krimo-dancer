@@ -16,8 +16,8 @@ export function Contact() {
           <MagneticLink href={`mailto:${contact.email}`} variant="yellow">
             {contact.email}
           </MagneticLink>
-          <MagneticLink href={contact.phoneHref} variant="light">
-            {contact.phone}
+          <MagneticLink href={contact.whatsappHref} variant="light" external>
+            WhatsApp
           </MagneticLink>
           <p>{contact.address}</p>
         </div>

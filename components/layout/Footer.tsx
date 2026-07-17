@@ -25,7 +25,7 @@ export function Footer() {
         </div>
       </div>
       <div className="site-footer__bottom">
-        <p>KRIMO © {new Date().getFullYear()} — Karim Traoré, Paris</p>
+        <p>KRIMO © {new Date().getFullYear()}</p>
         <p>Powered by presskit.fr</p>
       </div>
     </footer>

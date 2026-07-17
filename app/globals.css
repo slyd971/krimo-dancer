@@ -231,8 +231,8 @@ video {
 .menu-toggle {
   position: fixed;
   top: 1rem;
-  left: calc(100dvw - 6.4rem);
-  right: auto;
+  right: var(--page-x);
+  left: auto;
   z-index: 130;
 }
 
@@ -616,6 +616,11 @@ video {
   display: grid;
   gap: 0.75rem;
   align-content: start;
+}
+
+.tempete__facts {
+  /* Sur mobile (colonnes empilées), ce qui est inclus doit précéder le prix. */
+  order: -1;
 }
 
 .tempete__facts span,
@@ -1038,6 +1043,10 @@ video {
   .collaborations__columns,
   .experience__poster {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .tempete__facts {
+    order: 0;
   }
 
   .ldor__facts {
