@@ -658,6 +658,29 @@ video {
   border: 1px solid rgba(244, 243, 236, 0.45);
 }
 
+.ldor__gallery {
+  display: flex;
+  gap: 1rem;
+  margin: 4rem calc(var(--page-x) * -1) 0;
+  overflow-x: auto;
+  padding: 0 var(--page-x) 1rem;
+  scroll-snap-type: x proximity;
+}
+
+.ldor__gallery figure {
+  flex: 0 0 min(82vw, 30rem);
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.ldor__gallery img {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid var(--sage);
+}
+
 .ldor {
   background: var(--paper);
 }
@@ -1086,7 +1109,8 @@ video {
     grid-template-columns: 1.1fr 32rem;
   }
 
-  .tempete__gallery figure {
+  .tempete__gallery figure,
+  .ldor__gallery figure {
     flex-basis: 34rem;
   }
 }

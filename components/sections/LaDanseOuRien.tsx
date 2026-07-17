@@ -58,6 +58,19 @@ export function LaDanseOuRien() {
           Faire un don
         </MagneticLink>
       </div>
+      <div className="ldor__gallery" aria-label="Galerie La Danse ou Rien">
+        {ldor.images.map((src, index) => (
+          <figure key={src}>
+            <Image
+              src={src}
+              alt={`La Danse ou Rien image ${index + 1}`}
+              width={1400}
+              height={1000}
+              sizes="(max-width: 768px) 82vw, 34vw"
+            />
+          </figure>
+        ))}
+      </div>
     </section>
   );
 }
