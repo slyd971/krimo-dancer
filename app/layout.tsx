@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Anton, Archivo, Newsreader } from "next/font/google";
 import { contact } from "@/data/site-content";
 import "./globals.css";
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     siteName: "KRIMO",
     images: [
       {
-        url: "/images/krimo/karim-1.jpeg",
+        url: "/images/og/krimo-og.jpg",
         width: 1200,
-        height: 800,
+        height: 630,
         alt: "KRIMO en mouvement"
       }
     ],
@@ -55,11 +55,22 @@ export const metadata: Metadata = {
     title: "KRIMO — Danseur, performer et créateur de lien social",
     description:
       "L’univers de KRIMO : performance, énergie collective et engagement humain.",
-    images: ["/images/krimo/karim-1.jpeg"]
+    images: ["/images/og/krimo-og.jpg"]
   },
   icons: {
-    icon: "/favicon.svg"
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" }
+    ],
+    shortcut: "/favicon-32.png",
+    apple: "/apple-touch-icon.png"
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: "#050505"
 };
 
 export default function RootLayout({
@@ -71,6 +82,8 @@ export default function RootLayout({
       "@type": "Person",
       name: "KRIMO",
       alternateName: "Karim Traoré",
+      url: siteUrl,
+      image: `${siteUrl}/images/og/krimo-og.jpg`,
       jobTitle: "Danseur freestyle, performer et créateur de lien social",
       address: {
         "@type": "PostalAddress",
@@ -89,8 +102,25 @@ export default function RootLayout({
       "@context": "https://schema.org",
       "@type": "PerformingGroup",
       name: "La Tempête",
+      url: `${siteUrl}/#la-tempete`,
       genre: ["Hip-hop", "Afro", "House", "Techno", "Jazz", "Contemporain"],
       sameAs: "https://www.instagram.com/latempete_4"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      name: "La Danse ou Rien",
+      url: `${siteUrl}/#la-danse-ou-rien`,
+      description:
+        "Association artistique et solidaire fondée par Karim Traoré, qui utilise la danse comme outil de lien social auprès des personnes sans-abri, réfugiées et publics fragiles.",
+      email: contact.email,
+      foundingDate: "2025-06-24",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Paris",
+        addressCountry: "FR"
+      },
+      sameAs: "https://www.instagram.com/ladanseourien"
     }
   ];
 
