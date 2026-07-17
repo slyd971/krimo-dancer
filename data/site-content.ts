@@ -61,10 +61,19 @@ export const tempete = {
   priceNote: "Tarif fixe",
   facts: ["4 danseurs dont 1 DJ", "Paris", "Shows et animations", "Déplacements hors Paris à prévoir"],
   images: [
-    "/images/tempete/gallery-3.jpeg",
-    "/images/tempete/gallery-9.jpeg",
-    "/images/tempete/gallery-8.jpeg",
-    "/images/tempete/flyer-latempete-1.jpg"
+    "/images/tempete/gallery-3.webp",
+    "/images/tempete/gallery-9.webp",
+    "/images/tempete/gallery-8.webp",
+    "/images/tempete/gallery-7.webp",
+    "/images/tempete/gallery-11.webp",
+    "/images/tempete/gallery-13.webp",
+    "/images/tempete/gallery-latempete-1.webp",
+    "/images/tempete/gallery-latempete-2.webp",
+    "/images/tempete/gallery-latempete-3.webp",
+    "/images/tempete/flyer-latempete-1.webp",
+    "/images/tempete/flyer-latempete-2.webp",
+    "/images/tempete/flyer-latempete-3.webp",
+    "/images/tempete/flyer-latempete-4.webp"
   ]
 };
 
