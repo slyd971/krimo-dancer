@@ -102,8 +102,8 @@ export const experience = {
 export const gallery: GalleryItem[] = [
   {
     src: "/videos/hero-krimo.mp4",
-    alt: "KRIMO en mouvement, extrait vidéo",
-    caption: "En mouvement.",
+    alt: "KRIMO en solo, extrait de la vidéo hero",
+    caption: "Solo, énergie brute, sans filtre.",
     tone: "krimo",
     shape: "tall",
     type: "video"
@@ -132,7 +132,7 @@ export const gallery: GalleryItem[] = [
   {
     src: "/images/ldor/gallery-ladanseourien3.jpg",
     alt: "Action solidaire de La Danse ou Rien",
-    caption: "Créer du lien par le mouvement.",
+    caption: "Une maraude, un geste, un lien.",
     tone: "ldor",
     shape: "tall"
   },

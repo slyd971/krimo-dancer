@@ -795,24 +795,6 @@ video {
   transform: scale(1.04);
 }
 
-.gallery-tile span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
-  background: linear-gradient(180deg, transparent, rgba(17, 17, 15, 0.76));
-  font-weight: 700;
-}
-
-.gallery-tile--ldor span {
-  color: var(--paper);
-}
-
-.gallery-tile--tempete span {
-  color: var(--paper);
-}
-
 .lightbox {
   position: fixed;
   inset: 0;

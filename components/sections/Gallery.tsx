@@ -65,10 +65,10 @@ export function Gallery() {
             type="button"
             className={`gallery-tile gallery-tile--${item.shape} gallery-tile--${item.tone}`}
             key={item.src}
+            aria-label={item.caption}
             onClick={() => setActiveIndex(index)}
           >
             <GalleryTileMedia item={item} />
-            <span>{item.caption}</span>
           </button>
         ))}
       </div>
