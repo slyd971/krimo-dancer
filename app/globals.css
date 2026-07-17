@@ -782,14 +782,16 @@ video {
   cursor: zoom-in;
 }
 
-.gallery-tile img {
+.gallery-tile img,
+.gallery-tile video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 400ms ease;
 }
 
-.gallery-tile:hover img {
+.gallery-tile:hover img,
+.gallery-tile:hover video {
   transform: scale(1.04);
 }
 
@@ -826,7 +828,8 @@ video {
   margin: 0;
 }
 
-.lightbox img {
+.lightbox img,
+.lightbox video {
   max-height: 80svh;
   width: 100%;
   object-fit: contain;

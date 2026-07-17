@@ -1,9 +1,40 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { gallery } from "@/data/site-content";
+import { gallery, type GalleryItem } from "@/data/site-content";
+
+function GalleryTileMedia({ item }: { item: GalleryItem }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  if (item.type === "video") {
+    return (
+      <video
+        ref={videoRef}
+        src={item.src}
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+        onMouseEnter={() => videoRef.current?.play()}
+        onMouseLeave={() => videoRef.current?.pause()}
+        onFocus={() => videoRef.current?.play()}
+        onBlur={() => videoRef.current?.pause()}
+      />
+    );
+  }
+
+  return (
+    <Image
+      src={item.src}
+      alt={item.alt}
+      width={1400}
+      height={1600}
+      sizes="(max-width: 768px) 92vw, 32vw"
+    />
+  );
+}
 
 export function Gallery() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -36,13 +67,7 @@ export function Gallery() {
             key={item.src}
             onClick={() => setActiveIndex(index)}
           >
-            <Image
-              src={item.src}
-              alt={item.alt}
-              width={1400}
-              height={1600}
-              sizes="(max-width: 768px) 92vw, 32vw"
-            />
+            <GalleryTileMedia item={item} />
             <span>{item.caption}</span>
           </button>
         ))}
@@ -70,7 +95,11 @@ export function Gallery() {
             ‹
           </button>
           <figure onClick={(event) => event.stopPropagation()}>
-            <Image src={active.src} alt={active.alt} width={1600} height={1800} sizes="92vw" />
+            {active.type === "video" ? (
+              <video src={active.src} controls autoPlay muted loop playsInline />
+            ) : (
+              <Image src={active.src} alt={active.alt} width={1600} height={1800} sizes="92vw" />
+            )}
             <figcaption>{active.caption}</figcaption>
           </figure>
           <button

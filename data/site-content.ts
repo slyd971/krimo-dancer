@@ -4,6 +4,7 @@ export type GalleryItem = {
   caption: string;
   tone: "krimo" | "tempete" | "ldor";
   shape: "wide" | "tall" | "square";
+  type?: "image" | "video";
 };
 
 export const contact = {
@@ -99,6 +100,14 @@ export const experience = {
 };
 
 export const gallery: GalleryItem[] = [
+  {
+    src: "/videos/hero-krimo.mp4",
+    alt: "KRIMO en mouvement, extrait vidéo",
+    caption: "En mouvement.",
+    tone: "krimo",
+    shape: "tall",
+    type: "video"
+  },
   {
     src: "/images/krimo/karim-1.jpeg",
     alt: "KRIMO en performance dans un espace scénique",
