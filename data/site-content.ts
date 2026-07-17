@@ -96,8 +96,7 @@ export const experience = {
     "River’s King — Paris",
     "Punk Paradise — Paris",
     "La Felicità — Paris",
-    "Le Point Éphémère — Paris",
-    "Autres événements et soirées à Paris et en Île-de-France"
+    "Le Point Éphémère — Paris"
   ],
   roles: [
     "Danseur freestyle indépendant",
