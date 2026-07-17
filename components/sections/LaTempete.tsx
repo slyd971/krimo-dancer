@@ -27,7 +27,11 @@ export function LaTempete() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <MagneticLink href="https://www.instagram.com/latempete_4" variant="yellow" external>
+          <div className="tempete__price">
+            <span className="tempete__price-amount">{tempete.price}</span>
+            <span className="tempete__price-note">{tempete.priceNote}</span>
+          </div>
+          <MagneticLink href="#contact" variant="yellow">
             Réserver La Tempête
           </MagneticLink>
         </RevealText>

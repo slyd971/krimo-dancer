@@ -47,7 +47,9 @@ export const tempete = {
     "Interventions dans la foule",
     "Ateliers et actions culturelles"
   ],
-  facts: ["4 danseurs", "Paris", "Shows et animations", "400 € HT indicatif", "Déplacements hors Paris à prévoir"],
+  price: "400 € HT",
+  priceNote: "Tarif fixe",
+  facts: ["4 danseurs", "Paris", "Shows et animations", "Déplacements hors Paris à prévoir"],
   images: [
     "/images/tempete/gallery-3.jpeg",
     "/images/tempete/gallery-9.jpeg",

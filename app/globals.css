@@ -563,6 +563,30 @@ video {
   line-height: 1.68;
 }
 
+.tempete__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem 0.9rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.tempete__price-amount {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.tempete__price-note {
+  color: rgba(242, 239, 231, 0.78);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .editorial-list {
   display: grid;
   gap: 0;
