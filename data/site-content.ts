@@ -59,7 +59,7 @@ export const tempete = {
   ],
   price: "400 € HT",
   priceNote: "Tarif fixe",
-  facts: ["4 danseurs", "Paris", "Shows et animations", "Déplacements hors Paris à prévoir"],
+  facts: ["4 danseurs + 1 DJ", "Paris", "Shows et animations", "Déplacements hors Paris à prévoir"],
   images: [
     "/images/tempete/gallery-3.jpeg",
     "/images/tempete/gallery-9.jpeg",
