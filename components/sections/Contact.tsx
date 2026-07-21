@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <section id="contact" className="contact section-pad">
       <div className="grain" aria-hidden="true" />
-      <p className="chapter chapter--yellow">09 / Contact</p>
+      <p className="chapter chapter--yellow">08 / Contact</p>
       <h2>
         Vous avez un événement, une scène, un public ou une cause à faire bouger ?
         <span>Parlons-en.</span>

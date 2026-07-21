@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { RevealText } from "@/components/ui/RevealText";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { krimoStyles } from "@/data/site-content";
+import { experience, krimoStyles } from "@/data/site-content";
 
 export function KrimoIntro() {
   return (
@@ -30,6 +30,12 @@ export function KrimoIntro() {
         <p>
           Il est également le fondateur du collectif La Tempête et de l’association La Danse ou Rien.
         </p>
+        <p className="trusted-label">Rôles</p>
+        <ul className="editorial-list editorial-list--sage">
+          {experience.roles.map((role) => (
+            <li key={role}>{role}</li>
+          ))}
+        </ul>
       </RevealText>
       <div className="style-marquee" aria-label={krimoStyles.join(", ")}>
         <div aria-hidden="true">

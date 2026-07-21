@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MagneticLink } from "@/components/ui/MagneticLink";
 import { RevealText } from "@/components/ui/RevealText";
-import { tempete } from "@/data/site-content";
+import { tempete, trustedVenues } from "@/data/site-content";
 
 export function LaTempete() {
   return (
@@ -38,6 +38,14 @@ export function LaTempete() {
         <div className="tempete__facts">
           {tempete.facts.map((fact) => (
             <span key={fact}>{fact}</span>
+          ))}
+        </div>
+      </div>
+      <p className="trusted-label trusted-label--invert">Ils nous ont fait confiance</p>
+      <div className="style-marquee style-marquee--invert" aria-label={trustedVenues.join(", ")}>
+        <div aria-hidden="true">
+          {[...trustedVenues, ...trustedVenues].map((venue, index) => (
+            <span key={`${venue}-${index}`}>{venue}</span>
           ))}
         </div>
       </div>

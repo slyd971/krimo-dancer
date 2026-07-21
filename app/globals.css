@@ -102,7 +102,6 @@ video {
 .section-title h2,
 .tempete h2,
 .ldor h2,
-.experience h2,
 .collaborations h2,
 .contact h2 {
   margin: 0;
@@ -458,6 +457,10 @@ video {
   padding: 0.8rem 0;
 }
 
+.style-marquee--invert {
+  border-block-color: rgba(242, 239, 231, 0.32);
+}
+
 .style-marquee div {
   display: flex;
   width: max-content;
@@ -729,20 +732,6 @@ video {
   margin-top: 2rem;
 }
 
-.experience {
-  border-top: 1px solid var(--line);
-}
-
-.experience__poster {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2.25rem;
-  border: 1px solid var(--dark);
-  padding: clamp(1rem, 4vw, 3rem);
-  background: var(--paper);
-}
-
-.experience__poster p,
 .collaborations__columns p {
   margin: 0 0 1rem;
   color: var(--clay);
@@ -759,14 +748,16 @@ video {
   text-transform: uppercase;
 }
 
-.experience__poster ul,
+.trusted-label--invert {
+  color: rgba(242, 239, 231, 0.78);
+}
+
 .collaborations__columns ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.experience__poster li,
 .collaborations__columns li {
   border-top: 1px solid var(--line);
   padding: 0.85rem 0;
@@ -1070,8 +1061,7 @@ video {
   .tempete__grid,
   .ldor__layout,
   .contact__grid,
-  .collaborations__columns,
-  .experience__poster {
+  .collaborations__columns {
     grid-template-columns: 1fr 1fr;
   }
 

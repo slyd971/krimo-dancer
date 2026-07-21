@@ -55,7 +55,7 @@ export function Gallery() {
   return (
     <section className="gallery-section section-pad" aria-labelledby="gallery-title">
       <SectionTitle
-        eyebrow="07 / Galerie"
+        eyebrow="06 / Galerie"
         title="Fragments de scène, de rue et de lien."
         intro="Une galerie éditoriale qui traverse les trois dimensions de l’univers KRIMO."
       />

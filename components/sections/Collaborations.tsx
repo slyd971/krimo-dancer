@@ -6,7 +6,7 @@ export function Collaborations() {
   return (
     <section className="collaborations section-pad">
       <RevealText>
-        <p className="chapter">08 / Collaborations</p>
+        <p className="chapter">07 / Collaborations</p>
         <h2>Faisons bouger votre projet.</h2>
       </RevealText>
       <div className="collaborations__columns">

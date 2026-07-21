@@ -106,10 +106,13 @@ export const experience = {
 };
 
 export const trustedVenues = [
-  "Bellevilloise",
+  "La Bellevilloise",
   "Concorde Atlantique",
+  "River’s King",
+  "Punk Paradise",
+  "La Felicità",
+  "Le Point Éphémère",
   "La Javelle",
-  "Point Éphémère",
   "Metaxu",
   "F.M.R."
 ];
