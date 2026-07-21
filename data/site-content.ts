@@ -64,6 +64,7 @@ export const tempete = {
     "/images/tempete/gallery-3.webp",
     "/images/tempete/gallery-9.webp",
     "/images/tempete/gallery-8.webp",
+    "/images/tempete/gallery-tempete15.webp",
     "/images/tempete/gallery-7.webp",
     "/images/tempete/gallery-11.webp",
     "/images/tempete/gallery-13.webp",
