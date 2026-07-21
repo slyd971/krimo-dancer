@@ -750,6 +750,15 @@ video {
   text-transform: uppercase;
 }
 
+.trusted-label {
+  margin: 3rem 0 1rem;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .experience__poster ul,
 .collaborations__columns ul {
   margin: 0;

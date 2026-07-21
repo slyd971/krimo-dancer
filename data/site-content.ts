@@ -105,6 +105,15 @@ export const experience = {
   ]
 };
 
+export const trustedVenues = [
+  "Bellevilloise",
+  "Concorde Atlantique",
+  "La Javelle",
+  "Point Éphémère",
+  "Metaxu",
+  "F.M.R."
+];
+
 export const gallery: GalleryItem[] = [
   {
     src: "/videos/hero-krimo.mp4",
