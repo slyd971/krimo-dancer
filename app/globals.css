@@ -230,16 +230,29 @@ video {
 
 .menu-toggle {
   position: fixed;
-  top: 1rem;
+  top: 0.5rem;
   right: var(--page-x);
   left: auto;
   z-index: 130;
+  /* Plus d'ancêtre <header> depuis lequel hériter la couleur (voir Header.tsx) :
+     valeur par défaut adaptée au hero sombre, surchargée ci-dessous. */
+  color: var(--paper);
+}
+
+.menu-toggle--scrolled {
+  color: var(--dark);
+}
+
+.menu-toggle--open {
+  color: var(--paper);
 }
 
 .mobile-menu {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  /* Doit rester au-dessus du header et du contenu à tout scroll (mais sous
+     .menu-toggle à 130, pour que "Fermer" reste cliquable une fois ouvert). */
+  z-index: 120;
   display: grid;
   place-items: center;
   background: var(--dark);
