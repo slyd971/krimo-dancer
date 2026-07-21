@@ -20,13 +20,9 @@ export const contact = {
   ]
 };
 
-// Liens externes à finaliser côté association. Un seul endroit à modifier
-// quand les pages HelloAsso existeront.
 export const LINKS = {
-  don: "[URL_HELLOASSO_DON]",
-  adhesion: "[URL_HELLOASSO_ADHESION]",
-  // temporaire : pas de page dédiée aujourd'hui, cf. audit
-  maraude: "https://www.instagram.com/ladanseourien"
+  instagram: "https://www.instagram.com/ladanseourien",
+  linktree: "https://linktr.ee/ladanseourien.association"
 };
 
 export const navItems = [

@@ -48,14 +48,11 @@ export function LaDanseOuRien() {
         ))}
       </div>
       <div className="ldor__actions">
-        <MagneticLink href={LINKS.maraude} variant="sage" external>
-          Participer à une maraude
+        <MagneticLink href={LINKS.instagram} variant="sage" external>
+          Instagram
         </MagneticLink>
-        <MagneticLink href={LINKS.adhesion} variant="dark" external>
-          Adhérer à l’association
-        </MagneticLink>
-        <MagneticLink href={LINKS.don} variant="dark" external>
-          Faire un don
+        <MagneticLink href={LINKS.linktree} variant="dark" external>
+          En savoir plus
         </MagneticLink>
       </div>
       <div className="ldor__gallery" aria-label="Galerie La Danse ou Rien">
