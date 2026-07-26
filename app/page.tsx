@@ -2,7 +2,6 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { Collaborations } from "@/components/sections/Collaborations";
 import { Contact } from "@/components/sections/Contact";
-import { Gallery } from "@/components/sections/Gallery";
 import { HeroVideo } from "@/components/sections/HeroVideo";
 import { KrimoIntro } from "@/components/sections/KrimoIntro";
 import { KrimoUniverse } from "@/components/sections/KrimoUniverse";
