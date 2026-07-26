@@ -1,12 +1,3 @@
-export type GalleryItem = {
-  src: string;
-  alt: string;
-  caption: string;
-  tone: "krimo" | "tempete" | "ldor";
-  shape: "wide" | "tall" | "square";
-  type?: "image" | "video";
-};
-
 export const contact = {
   // TODO: remplacer par l'email de booking dédié quand disponible — actuellement l'email associatif.
   email: "ladanseourien.asso@gmail.com",
@@ -114,59 +105,6 @@ export const trustedVenues = [
   "La Javelle",
   "Metaxu",
   "F.M.R."
-];
-
-export const gallery: GalleryItem[] = [
-  {
-    src: "/videos/hero-krimo.mp4",
-    alt: "KRIMO en solo, extrait de la vidéo hero",
-    caption: "Solo, énergie brute, sans filtre.",
-    tone: "krimo",
-    shape: "tall",
-    type: "video"
-  },
-  {
-    src: "/images/krimo/karim-1.jpeg",
-    alt: "KRIMO en performance dans un espace scénique",
-    caption: "Freestyle, présence, contact direct.",
-    tone: "krimo",
-    shape: "wide"
-  },
-  {
-    src: "/images/tempete/gallery-1.jpeg",
-    alt: "La Tempête en intervention événementielle",
-    caption: "La foule comme scène vivante.",
-    tone: "tempete",
-    shape: "square"
-  },
-  {
-    src: "/images/tempete/gallery-10.jpeg",
-    alt: "Danseurs de La Tempête pendant un événement",
-    caption: "Énergie collective, format événement.",
-    tone: "tempete",
-    shape: "wide"
-  },
-  {
-    src: "/images/ldor/gallery-ladanseourien3.jpg",
-    alt: "Action solidaire de La Danse ou Rien",
-    caption: "Une maraude, un geste, un lien.",
-    tone: "ldor",
-    shape: "tall"
-  },
-  {
-    src: "/images/ldor/gallery-ladanseourien4.jpg",
-    alt: "Atelier ou maraude dansante La Danse ou Rien",
-    caption: "Danser pour ouvrir un espace commun.",
-    tone: "ldor",
-    shape: "square"
-  },
-  {
-    src: "/images/tempete/Gallery-12.jpeg",
-    alt: "Portrait vertical d’un danseur de La Tempête",
-    caption: "Nightlife, impact, improvisation.",
-    tone: "tempete",
-    shape: "tall"
-  }
 ];
 
 export const collaborationTargets = [
