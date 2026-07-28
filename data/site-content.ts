@@ -80,7 +80,8 @@ export const ldor = {
   ],
   images: [
     "/images/ldor/gallery-ladanseourien1.jpg",
-    "/images/ldor/gallery-ladanseourien2.jpg",
+    "/images/ldor/gallery-ladanseourien5.jpg",
+    "/images/ldor/gallery-ladanseourien6.jpg",
     "/images/ldor/flyer-ladanseourien1.jpg"
   ]
 };
