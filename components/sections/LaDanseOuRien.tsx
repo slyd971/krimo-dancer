@@ -56,10 +56,10 @@ export function LaDanseOuRien() {
         </MagneticLink>
       </div>
       <div className="ldor__gallery" aria-label="Galerie La Danse ou Rien">
-        {ldor.images.map((src, index) => (
-          <figure key={src}>
+        {ldor.images.map((image, index) => (
+          <figure className={image.blurred ? "ldor__gallery-blurred" : undefined} key={image.src}>
             <Image
-              src={src}
+              src={image.src}
               alt={`La Danse ou Rien image ${index + 1}`}
               width={1400}
               height={1000}

@@ -686,6 +686,7 @@ video {
 .ldor__gallery figure {
   flex: 0 0 min(82vw, 30rem);
   margin: 0;
+  overflow: hidden;
   scroll-snap-align: start;
 }
 
@@ -695,6 +696,11 @@ video {
   height: auto;
   object-fit: cover;
   border: 1px solid var(--sage);
+}
+
+.ldor__gallery-blurred img {
+  filter: blur(14px);
+  transform: scale(1.04);
 }
 
 .ldor {
