@@ -79,11 +79,14 @@ export const ldor = {
     "Événements, ateliers et performances"
   ],
   images: [
-    { src: "/images/ldor/gallery-ladanseourien3.jpg", blurred: true },
-    { src: "/images/ldor/gallery-ladanseourien1.jpg" },
-    { src: "/images/ldor/gallery-ladanseourien5.jpg" },
-    { src: "/images/ldor/gallery-ladanseourien6.jpg" },
-    { src: "/images/ldor/flyer-ladanseourien1.jpg" }
+    "/images/ldor/gallery-ladanseourien3.jpg",
+    "/images/ldor/gallery-ladanseourien1.jpg",
+    "/images/ldor/gallery-ladanseourien2.jpg",
+    "/images/ldor/gallery-ladanseourien4.jpg",
+    "/images/ldor/gallery-ladanseourien5.jpg",
+    "/images/ldor/gallery-ladanseourien6.jpg",
+    "/images/ldor/flyer-ladanseourien1.jpg",
+    "/images/ldor/flyer-ladanseourien2.jpg"
   ]
 };
 

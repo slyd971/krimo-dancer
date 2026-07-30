@@ -698,11 +698,6 @@ video {
   border: 1px solid var(--sage);
 }
 
-.ldor__gallery-blurred img {
-  filter: blur(14px);
-  transform: scale(1.04);
-}
-
 .ldor {
   background: var(--paper);
 }

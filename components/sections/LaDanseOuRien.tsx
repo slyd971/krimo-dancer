@@ -57,9 +57,9 @@ export function LaDanseOuRien() {
       </div>
       <div className="ldor__gallery" aria-label="Galerie La Danse ou Rien">
         {ldor.images.map((image, index) => (
-          <figure className={image.blurred ? "ldor__gallery-blurred" : undefined} key={image.src}>
+          <figure key={image}>
             <Image
-              src={image.src}
+              src={image}
               alt={`La Danse ou Rien image ${index + 1}`}
               width={1400}
               height={1000}
